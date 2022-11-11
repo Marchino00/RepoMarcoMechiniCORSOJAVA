@@ -1,0 +1,20 @@
+import java.util.Scanner; // Importo le funzionalita scanner della libreria di java until
+
+
+class scanner {
+    public static void main(String[] args) {
+        Scanner Lavoro = new Scanner(System.in); // Andiamo a creare un nuovo scanner   !!! Lavoro è un nome casuale
+        
+        System.out.println("Metti il tuo nick");
+
+        String NomeTuo = Lavoro.nextLine(); // Read user input
+        
+        System.out.println("Il tuo nick è: " + NomeTuo); // Output user input
+        
+
+
+        //Scanner Lavorodoub = new Scanner(System.in); // qui ci metto gli interi
+        //Double Nomedue = Lavorodoub.nextDouble(); 
+        //System.out.println("Il tuo numero è: " + Nomedue);
+    }
+}
