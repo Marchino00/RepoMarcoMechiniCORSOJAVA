@@ -16,18 +16,17 @@ public class aRRAYeSERCIZIO {
         ArrayList<Integer> list = new ArrayList<Integer>();
         ArrayList<String> list2 = new ArrayList<String>();
         Scanner INPUT = new Scanner(System.in);
-        int i = 0;
 
         do {
             if (Controll == true) {
 
                 // Scelta menù
-                System.out.println("Scegli: Aggiungi o Esci");
+                System.out.println("Scegli: (Agg) Aggiungi o Esci");
                 String risposta = scelta.nextLine();
                 System.out.println("-------------------------");
 
                 // Scelta dove vuoi aggiungere
-                if (risposta.equals("Aggiungi")) {
+                if (risposta.equals("Agg")) {
 
                     // Chiedo all'utente in quale array vuole datoerire
                     System.out.println("Scegli in quale array vuoi inserire i dati: (0) Interi o (1) Stringhe");
@@ -40,16 +39,13 @@ public class aRRAYeSERCIZIO {
                         // Scrivere dato da inserire numero e inserirlo nello scanner
                         list.add(INPUT.nextInt());
                         System.out.println("-------------------------");
-                        i++;
 
                     } else if (dato == 1) {
 
                         System.out.println("Scegli che parola inserire");
                         // Scrivere dato da inserire stringa e inserirlo nello scanner
                         list2.add(INPUT.nextLine());
-                        System.out.println(list2);
                         System.out.println("-------------------------");
-                        i++;
 
                     }
                     // Esce dal ciclo
